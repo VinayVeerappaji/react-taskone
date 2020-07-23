@@ -11,8 +11,24 @@
     width: 80%;
     
 }
+.head-content button{
+    padding: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    color: red;
+    border-color: red;
+    border-radius: 2px;
+    background-color: transparent;
+}
 .span-right{
     margin-left: auto;
+    
+}
+a{
+    text-decoration: solid;
+    color: black;
+    padding: 5px 5px 5px 5px;
 }
 
 

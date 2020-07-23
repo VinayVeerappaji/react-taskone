@@ -8,7 +8,7 @@ function HeadComponent(props) {
             <button>x</button>
             </div>
             <div className="right">
-            <label>your paper bag</label>
+            <label style={{color:"blue",fontSize:"1.3em"}}>Your PaperBag</label>
             <img src='./dummpy.jpg' alt="image"/>
             </div>
             
