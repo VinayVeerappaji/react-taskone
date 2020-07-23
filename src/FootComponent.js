@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import './App.css'
+import './HeadFoot.css'
 
 function HeadComponent(props) {
     return (

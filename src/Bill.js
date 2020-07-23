@@ -17,12 +17,16 @@ class Bill extends React.Component {
                 </div>
                 </div>
                 <div className="bottom-line">
-                    <label>Coupon Code</label>
-                    <input type="textbox" />
-                    <button>Find</button>
+                    <div className="coupon">
+                        <label>Coupon Code</label>
+                        <input type="textbox" />
+                        <button>Find</button>
+                    </div>
                     
+                    <div className="total">
                     <label>To Pay</label>
                     <label><strong>{`$${this.props.values[2]}`}</strong></label>
+                    </div>
                 </div>
                 
             </div>

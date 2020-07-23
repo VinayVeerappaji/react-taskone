@@ -48,11 +48,29 @@
     
 }
 .bottom-line{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: thistle;
+
+    
+        width: 100%;
+       
+        display: flex;
+        justify-content: space-between;
+    
 }
+
+.coupon{
+    width: 80%;
+ 
+}
+.total{
+    
+    
+
+
+    margin-left: auto;
+    
+}
+
+
 
 
 

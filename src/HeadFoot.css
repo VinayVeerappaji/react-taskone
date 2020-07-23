@@ -1,0 +1,33 @@
+.foot-content{
+
+    
+    width: 100%;
+       
+    display: flex;
+    justify-content: space-between;
+
+}
+.span-left{
+    width: 80%;
+    
+}
+.span-right{
+    margin-left: auto;
+}
+
+
+
+.head-content{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+width: 70%;
+
+}
+.right{
+margin-left: auto;
+}
