@@ -7,7 +7,7 @@ class Items extends React.Component {
         return(
             <div class='container'>
                 <img src={BurgerImage} class="food-image" alt='burger'/>
-                <div class='conatiner-content'>
+                <div class='container-content'>
                     <div class="item-detail">
                         <label>need to add icon</label>
                         <h1>{this.props.itemName}</h1>
@@ -29,19 +29,18 @@ class Items extends React.Component {
                     <button className='optionbutton'>Extra Patty</button>
 
                 </div>
-                <div style={{
-                        display: 'flex',
-                        position: 'relative',
-                        width: '20%',
-                }}>
+                
                 <div class = 'quantity'>
                     <button name='sub' onClick={this.props.decreasequantity}>-</button>
                     <label>{this.props.quantity}</label>
                     <button name='add' onClick={this.props.increasequantity}>+</button>
                 </div>
-                <button className='cancelbutton'>X</button>
+                <div className='cancelbutton'>
+                <button >X</button>
+
                 </div>
-            </div>
+                </div>
+            
         )
     }
 }
