@@ -48,7 +48,7 @@
     font-size: 2em;
     font-weight: bold;
     font-family: cursive;
-    color: blue;
+    color: #1616bd;
 }
 .top-up{
     display: flex;
@@ -65,6 +65,12 @@
     background-color: white;
     color: #1616bd;
     font-weight: 700;
+}
+
+.top-up button:active{
+    background-color: #1616bd;
+    color: white;
+    border: none;
 }
 
 

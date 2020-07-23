@@ -1,4 +1,6 @@
 .delivery-type{
+    margin-top: 5em;
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,29 +45,46 @@
 .bill-container label{
     font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blue;
+    color: #1616bd;
     padding-right: 10px;
     
 }
 .bottom-line{
-
-    
         width: 100%;
-       
         display: flex;
         justify-content: space-between;
     
 }
 
+.bottom-line button{
+    width:5em;
+    border: none;
+    background-color: #1616bd;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+input{
+    border-color: #1616bd;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.delivery-type hr { 
+    display: block;
+    height: 2;
+    border: 0;
+    border-top: 1px solid #1616bd;
+    margin: 1em 0;
+    padding: 0;
+}
+
 .coupon{
     width: 80%;
- 
 }
 .total{
-    
-    
-
-
     margin-left: auto;
     
 }
@@ -74,25 +93,5 @@
 
 
 
-.foot-content{
-    
-    display: inline;
-    
 
-}
 
-.spanleft{
-    position: absolute;
-    left: 0px;
-} 
-strong{
-    font-size: 1.5em;
-    font-family: sans-serif;
-    color: #1616bd;
-    text-decoration: underline;
-    text-decoration-color: #f7f711;
-}
-.spanright{
-    position: absolute;
-    right: 0px;
-} 

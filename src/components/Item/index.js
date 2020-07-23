@@ -11,19 +11,19 @@ class Items extends React.Component {
                     <div className="main-content">
                         <div class="item-detail">
                             <label>need to add icon</label>
-                            <h1>{this.props.itemName}</h1>
-                            <h6>Containments</h6>
-                            {this.props.discount>0&&<h3>{this.props.discount}% OFFER APPLIED</h3>}
+                            <h1 style={{color:'#1616bd'}}>{this.props.itemName}</h1>
+                            <h6 style={{color:'grey'}}>Containments</h6>
+                            {this.props.discount>0&&<h3 style={{color:'grey'}}>{this.props.discount}% OFFER APPLIED</h3>}
                         </div>
                         
                         <div class='price'>
                             {this.props.discount>0?
                                 <>
-                                <label style={{textDecoration:'line-through'}}>{this.props.price}</label>
-                                <label >{this.props.price-(this.props.price * this.props.discount/100)}</label>
+                                <label style={{textDecoration:'line-through'}}>Rs.{this.props.price}</label>
+                                <label >Rs.{this.props.price-(this.props.price * this.props.discount/100)}</label>
                                 </>
                                 :
-                                <label>{this.props.price}</label>
+                                <label>Rs.{this.props.price}</label>
                                 }
                         </div>
                     </div>

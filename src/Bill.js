@@ -6,14 +6,15 @@ class Bill extends React.Component {
         console.log(this.props)
         return(
             <div class="bill-container">
+                <hr/>
                 <div className="top-line">
                 <div class="details">
                     <label>Total</label><br/>
                     <label>Tax Charges</label>
                 </div>
                 <div class="amount">
-                   <label>{`Rs ${this.props.values[0]}`}</label> <br/>
-                    <label>{`$${this.props.values[1]}`}</label>
+                   <label>{`Rs ${this.props.values[0].toFixed(2)}`}</label> <br/>
+                    <label>{`Rs ${this.props.values[1].toFixed(2)}`}</label>
                 </div>
                 </div>
                 <div className="bottom-line">
@@ -25,7 +26,7 @@ class Bill extends React.Component {
                     
                     <div className="total">
                     <label>To Pay</label>
-                    <label><strong>{`$${this.props.values[2]}`}</strong></label>
+                    <label><strong>{`$${this.props.values[2].toFixed(2)}`}</strong></label>
                     </div>
                 </div>
                 

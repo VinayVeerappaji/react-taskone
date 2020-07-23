@@ -35,7 +35,7 @@ class ItemList extends React.Component {
     changequantity(index, value) {
         this.setState(prevState => {
             let newItemsStateArray = prevState.items;
-            if (newItemsStateArray[index].quantity > 0){
+            if (newItemsStateArray[index].quantity >= 0){
                 newItemsStateArray[index].quantity = newItemsStateArray[index].quantity + value;
 
             }
@@ -47,7 +47,12 @@ class ItemList extends React.Component {
 
     values() {
         const total = this.state.items.reduce(function (accumulator, currentValue) {
-            return accumulator + currentValue.price.discount>0?(currentValue.price*currentValue.quantity-(currentValue.price*currentValue.quantity*currentValue.price.discount/100)):(currentValue.price*currentValue.quantity);
+            const valueToBeAdded = currentValue.price.discount>0 ? 
+            (currentValue.price*currentValue.quantity-(currentValue.price*currentValue.quantity*(currentValue.price.discount/100)))
+            :
+            (currentValue.price*currentValue.quantity);
+            const newTotal = accumulator + valueToBeAdded 
+            return  newTotal
             }, 0);
         const tax = total*0.13
         const totalWithTax = total*1.13
