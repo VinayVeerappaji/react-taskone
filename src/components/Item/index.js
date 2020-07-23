@@ -8,25 +8,33 @@ class Items extends React.Component {
             <div class='container'>
                 <img src={BurgerImage} class="food-image" alt='burger'/>
                 <div class='container-content'>
-                    <div class="item-detail">
-                        <label>need to add icon</label>
-                        <h1>{this.props.itemName}</h1>
-                        <h6>Containments</h6>
-                        {this.props.discount>0&&<h3>{this.props.discount}% OFFER APPLIED</h3>}
+                    <div className="main-content">
+                        <div class="item-detail">
+                            <label>need to add icon</label>
+                            <h1>{this.props.itemName}</h1>
+                            <h6>Containments</h6>
+                            {this.props.discount>0&&<h3>{this.props.discount}% OFFER APPLIED</h3>}
+                        </div>
+                        
+                        <div class='price'>
+                            {this.props.discount>0?
+                                <>
+                                <label style={{textDecoration:'line-through'}}>{this.props.price}</label>
+                                <label >{this.props.price-(this.props.price * this.props.discount/100)}</label>
+                                </>
+                                :
+                                <label>{this.props.price}</label>
+                                }
+                        </div>
                     </div>
-                    <div class='price'>
-                        {this.props.discount>0?
-                            <>
-                            <h2 style={{textDecoration:'line-through'}}>{this.props.price}</h2>
-                            <h2 >{this.props.price-(this.props.price * this.props.discount/100)}</h2>:
-                            </>
-                            :
-                            <h2>{this.props.price}</h2>
-                            }
-                    </div>
-                    <button className='optionbutton'>Extra Cheese</button>
-                    <button className='optionbutton'>Extra suger</button>
-                    <button className='optionbutton'>Extra Patty</button>
+                    <div className='top-up'>
+                            <button >Extra Cheese</button>
+                            <button >Extra suger</button>
+                            <button >Extra Patty</button>
+                        </div>
+                    
+                    
+                    
 
                 </div>
                 

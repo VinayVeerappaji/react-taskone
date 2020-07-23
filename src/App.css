@@ -16,6 +16,46 @@
 
 }
 
+.bill-container{
+    width: 100%;
+    height: 200px;
+    padding: 1%;
+    margin : 15px 10px;
+}
+.top-line{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.top-line .details{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   
+}
+.top-line .amount{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.bill-container label{
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    padding-right: 10px;
+    
+}
+.bottom-line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: thistle;
+}
+
+
+
 .foot-content{
     
     display: inline;

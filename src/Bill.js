@@ -6,19 +6,25 @@ class Bill extends React.Component {
         console.log(this.props)
         return(
             <div class="bill-container">
+                <div className="top-line">
                 <div class="details">
-                    <h3>Total</h3>
-                    <h3>Tax Charges</h3>
+                    <label>Total</label><br/>
+                    <label>Tax Charges</label>
                 </div>
-                <div class="price">
-                    {`Rs ${this.props.values[0]}`}
-                    {`$${this.props.values[1]}`}
+                <div class="amount">
+                   <label>{`Rs ${this.props.values[0]}`}</label> <br/>
+                    <label>{`$${this.props.values[1]}`}</label>
                 </div>
-                <h3>Coupon Code</h3>
-                <input type="textbox" />
-                <button>Find</button>
-                <h4>To Pay</h4>
-                <h2>{`$${this.props.values[2]}`}</h2>
+                </div>
+                <div className="bottom-line">
+                    <label>Coupon Code</label>
+                    <input type="textbox" />
+                    <button>Find</button>
+                    
+                    <label>To Pay</label>
+                    <label><strong>{`$${this.props.values[2]}`}</strong></label>
+                </div>
+                
             </div>
 
         )
