@@ -10,7 +10,7 @@ class Bill extends React.Component {
                 <div className="top-line">
                 <div class="details">
                     <label>Total</label><br/>
-                    <label>Tax Charges</label>
+                    <label style={{textDecoration:'underline',textDecorationColor:'yellow',textDecorationThickness:'3px'}} >Tax Charges</label>
                 </div>
                 <div class="amount">
                    <label>{`Rs ${this.props.values[0].toFixed(2)}`}</label> <br/>
